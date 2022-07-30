@@ -102,11 +102,12 @@ header .menu{
 .container-externo{
     background-color: blueviolet;
     width: 100%;
+    padding-bottom: 100px;
 }
 #servicos{
     flex-direction: column;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 #servicos h2{
     color: beige;
@@ -147,16 +148,22 @@ margin-top: 20px;
 #planos{
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 50px;
+}
+#planos h2{
+    font-size: 32px;
 }
 .list-planos{
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
 }
 .item-plano{
     flex: 1;
     border: 5px solid blueviolet;
     margin-right: 20px;
     padding: 10px;
+    max-width: 240px;
 }
 .item-plano .btn{
     margin: auto;
@@ -167,6 +174,7 @@ margin-top: 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 20px;
 }
 .item-plano h3::after{
     content: "";
@@ -180,4 +188,27 @@ margin-top: 20px;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
+}
+.item-plano ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.item-plano ul li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: blueviolet;
+    margin-right: 5px;
+}
+footer{
+    background-color: blueviolet;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+footer .footer{
+    justify-content: space-between;
+    color: beige;
 }
