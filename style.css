@@ -11,6 +11,10 @@ ul{
 ul li a{
     text-decoration: none;
 }
+div img{
+    display: block;
+    width: 100%;
+}
 .flex-container{
     display: flex;
     max-width: 992px; 
@@ -45,11 +49,15 @@ header .menu{
 }
 .apresentacao .texto-apresentacao{
     min-height: 200px;
+    align-items: center;
+    justify-content: space-around;
+
 }
 .texto-apresentacao h1{
+    margin-top: 200px;
     color: blueviolet;
     font-size: 48px;
-    margin-bottom: 10px;
+   
 }
 .texto-apresentacao a{
     background-color: blueviolet;
@@ -66,4 +74,25 @@ header .menu{
 }
 #quem-somos{
     flex-direction: row-reverse;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+#quem-somos h2{
+    font-size: 32px;
+    color: blueviolet;
+    display: flex;
+    margin-bottom: 20px;
+}
+#quem-somos h2::before{
+    content: "";
+    height: 40px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: blueviolet;
+    position: relative;   
+}
+#quem-somos p{
+    margin-bottom: 10px;
+    width: 90%;
 }
